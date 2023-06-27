@@ -10,9 +10,9 @@ negativeorderedArray = [-30, -25, -21, -17, -12, -9, -5, -2, -1]
 
 
 class testSort(unittest.TestCase):
-    def test_bubbleSort(self):
-        self.assertEqual(bubbleSort(unorderedArray), [1, 2, 4, 8, 9, 12, 19, 25, 28, 29, 30])
-        self.assertEqual(bubbleSort(negativeArray), [-30, -23, -20, -19, -12, -7, -3, -1])
+    def test_heapSort(self):
+        self.assertEqual(heapSort(unorderedArray), [1, 2, 4, 8, 9, 12, 19, 25, 28, 29, 30])
+        self.assertEqual(heapSort(reversedArray), [1, 2, 5, 6, 9, 11, 14, 17, 20, 23, 27, 30])
 
 
 

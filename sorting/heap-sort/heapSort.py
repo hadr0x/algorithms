@@ -5,6 +5,8 @@ def heapSort(iterable):
     for i in range(n - 1, 0, -1):
         iterable[i], iterable[0] = iterable[0], iterable[i]
         heapify(iterable, i, 0)
+        
+    return iterable
 
 def heapify(iterable, n, root):
     left = 2 * root + 1  
