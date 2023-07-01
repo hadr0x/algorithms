@@ -5,10 +5,10 @@ The algorithm can be used for either ascending or descending sorting.
 ![Bubble Sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 ## Complexity
-|Algorithm     |Best   |Average      |Worst        |Space   |
-|-------------:|:-----:|:-----------:|:-----------:|:-------|
-|*Bubble sort* |n      |n<sup>2</sup>|n<sup>2</sup>|1       |
+|Algorithm        |Best       |Average      |Worst        |Space           |
+|-----------------|:---------:|:-----------:|:-----------:|:---------------|
+|*Insertion sort* |$\Omega(n)$|$\Theta(n^2)$|$O(n^2)$     |$O(1)$          |
 
-## Link
+## Resources
 * [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort)
 * [Youtube](https://www.youtube.com/watch?v=xli_FI7CuzA)
