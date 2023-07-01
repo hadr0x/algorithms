@@ -9,6 +9,6 @@ L'algoritmo può essere usato sia per un ordinamento crescente sia decrescente.
 |-----------------|:---------:|:-----------:|:-----------:|:---------------|
 |*Insertion sort* |$\Omega(n)$|$\Theta(n^2)$|$O(n^2)$     |$O(1)$          |
 
-## Risorse
+## Resources
 * [Wikipedia](https://it.wikipedia.org/wiki/Bubble_sort)
 * [Youtube](https://www.youtube.com/watch?v=xli_FI7CuzA)
