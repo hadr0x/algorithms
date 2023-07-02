@@ -6,7 +6,7 @@ Selection sort works by taking the smallest element in an unsorted array and bri
 ## Complexity
 |Algorithm        |Best         |Average      |Worst        |Space           |
 |-----------------|:-----------:|:-----------:|:-----------:|:---------------|
-|*Insertion sort* |$\Omega(n^2)$|$\Theta(n^2)$|$O(n^2)$     |$O(1)$          |
+|*Selection sort* |$\Omega(n^2)$|$\Theta(n^2)$|$O(n^2)$     |$O(1)$          |
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Selection_sort)
