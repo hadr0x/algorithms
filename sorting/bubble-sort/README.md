@@ -7,7 +7,7 @@ The algorithm can be used for either ascending or descending sorting.
 ## Complexity
 |Algorithm        |Best       |Average      |Worst        |Space           |
 |-----------------|:---------:|:-----------:|:-----------:|:---------------|
-|*Insertion sort* |$\Omega(n)$|$\Theta(n^2)$|$O(n^2)$     |$O(1)$          |
+|*Bubble sort*    |$\Omega(n)$|$\Theta(n^2)$|$O(n^2)$     |$O(1)$          |
 
 ## Resources
 * [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort)
