@@ -6,7 +6,7 @@ Heap sort is a comparison-based sorting technique based on Binary Heap data stru
 ## Complexity
 |Algorithm        |Best              |Average           |Worst             |Space           |
 |-----------------|:----------------:|:----------------:|:----------------:|:---------------|
-|*Insertion sort* |$\Omega(n\log{}n)$|$\Theta(n\log{}n)$|$O(n\log{}n)$     |$O(1)$          |
+|*Heap sort*      |$\Omega(n\log{}n)$|$\Theta(n\log{}n)$|$O(n\log{}n)$     |$O(1)$          |
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Heapsort)
