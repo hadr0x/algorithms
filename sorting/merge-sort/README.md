@@ -6,7 +6,7 @@ Merge sort is one of the most efficient sorting algorithms. It is based on the d
 ## Complexity
 |Algorithm        |Best              |Average           |Worst             |Space           |
 |-----------------|:----------------:|:----------------:|:----------------:|:---------------|
-|*Insertion sort* |$\Omega(n\log{}n)$|$\Theta(n\log{}n)$|$O(n\log{}n)$     |$O(n)$          |
+|*Merge sort*     |$\Omega(n\log{}n)$|$\Theta(n\log{}n)$|$O(n\log{}n)$     |$O(n)$          |
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
