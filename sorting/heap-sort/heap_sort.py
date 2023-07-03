@@ -1,4 +1,4 @@
-def heapSort(iterable):
+def heap_sort(iterable):
     n = len(iterable)
     build_max_heap(iterable)
 

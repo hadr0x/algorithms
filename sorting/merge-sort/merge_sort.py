@@ -1,12 +1,12 @@
-def mergeSort(iterable):
+def merge_sort(iterable):
     listLength = len(iterable)
     if listLength == 1:
         return iterable
 
     midPoint = listLength // 2
 
-    leftList = mergeSort(iterable[:midPoint])
-    rightList = mergeSort(iterable[midPoint:])
+    leftList = merge_sort(iterable[:midPoint])
+    rightList = merge_sort(iterable[midPoint:])
 
     return merge(leftList, rightList)
 

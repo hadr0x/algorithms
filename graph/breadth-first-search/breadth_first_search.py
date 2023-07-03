@@ -1,4 +1,4 @@
-def BFS(graph, node):
+def breadth_first_search(graph, node):
     visited = []
     queue = []
 

@@ -1,4 +1,4 @@
-def bubbleSort(iterable):
+def bubble_sort(iterable):
     for i in range(len(iterable) - 1):
     
         for k in range(0, len(iterable) - i - 1):

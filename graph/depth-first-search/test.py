@@ -1,7 +1,6 @@
 import unittest
-from depthFirstSearch import DFS
+from depth_first_search import depth_first_search
 
-visitedList = []
 graph = {
     0 : [3, 9],
     3 : [2, 1],
@@ -14,7 +13,7 @@ graph = {
 
 class Test(unittest.TestCase):
     def test_DFS(self):
-        self.assertEqual(DFS(visitedList, graph, 0), [0, 3, 2, 4, 1, 9, 10])
+        self.assertEqual(depth_first_search(graph, 0), [0, 3, 2, 4, 1, 9, 10])
 
 
 if __name__ == '__main__':

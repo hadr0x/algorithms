@@ -16,15 +16,15 @@ def partition(iterable, low, high):
     return i + 1
 
 
-def quickSort(iterable, low, high):
+def quick_sort(iterable, low, high):
     if low < high:
         
         pi = partition(iterable, low, high)
 
         # Recursive call on the left of pivot    
-        quickSort(iterable, low, pi - 1)
+        quick_sort(iterable, low, pi - 1)
 
         # Recursive call on the right of pivot
-        quickSort(iterable, pi + 1, high)
+        quick_sort(iterable, pi + 1, high)
         
     return iterable

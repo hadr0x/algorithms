@@ -1,5 +1,5 @@
 import unittest
-from quickSort import quickSort
+from quick_sort import quick_sort
 
 unorderedArray = [25, 12, 29, 4, 30, 8, 19, 28, 1, 9, 2]
 orderedArray = [1, 3, 5, 6, 7, 9, 11, 14, 18, 24, 28, 30]
@@ -11,8 +11,8 @@ negativeorderedArray = [-30, -25, -21, -17, -12, -9, -5, -2, -1]
 
 class testSort(unittest.TestCase):
     def test_heapSort(self):
-        self.assertEqual(quickSort(unorderedArray, 0, len(unorderedArray) - 1), [1, 2, 4, 8, 9, 12, 19, 25, 28, 29, 30])
-        self.assertEqual(quickSort(reversedArray, 0, len(reversedArray) - 1), [1, 2, 5, 6, 9, 11, 14, 17, 20, 23, 27, 30])
+        self.assertEqual(quick_sort(unorderedArray, 0, len(unorderedArray) - 1), [1, 2, 4, 8, 9, 12, 19, 25, 28, 29, 30])
+        self.assertEqual(quick_sort(reversedArray, 0, len(reversedArray) - 1), [1, 2, 5, 6, 9, 11, 14, 17, 20, 23, 27, 30])
 
 
 

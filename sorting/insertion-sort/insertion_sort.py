@@ -1,4 +1,4 @@
-def insertionSort(iterable):
+def insertion_sort(iterable):
     for i in range(len(iterable)):
         k = i
         
