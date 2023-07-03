@@ -1,4 +1,4 @@
-def BFS(root):
+def breadth_first_search(root):
     visited = []
     queue = []
 
@@ -14,5 +14,4 @@ def BFS(root):
         if node.right != None:
             queue.append(node.right)
 
-            
     return visited
