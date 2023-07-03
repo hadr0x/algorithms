@@ -1,5 +1,5 @@
 import unittest
-from breadthFirstSearch import BFS
+from breadth_first_search import breadth_first_search
 
 # Node constructor
 class Node:
@@ -21,8 +21,8 @@ root.right.left = Node(10)          #     └── 10
 
 class Test(unittest.TestCase):
     def test_BFS(self):
-        self.assertEqual(BFS(root), [0, 3, 9, 2, 1, 10, 4])
-        self.assertEqual(BFS(root.left), [3, 2, 1, 4])
+        self.assertEqual(breadth_first_search(root), [0, 3, 9, 2, 1, 10, 4])
+        self.assertEqual(breadth_first_search(root.left), [3, 2, 1, 4])
 
 
 if __name__ == '__main__':
