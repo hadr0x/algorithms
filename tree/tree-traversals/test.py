@@ -1,5 +1,5 @@
 import unittest
-from treeTraversals import inorder, postorder, preorder
+from tree_traversals import inorder, postorder, preorder
 
 # Node constructor
 class Node:
