@@ -1,31 +1,29 @@
-def heap_sort(iterable):
-    n = len(iterable)
-    build_max_heap(iterable)
+def heap_sort(array):
+    n = len(array)
+    build_max_heap(array)
 
     for i in range(n - 1, 0, -1):
-        iterable[i], iterable[0] = iterable[0], iterable[i]
-        heapify(iterable, i, 0)
-        
-    return iterable
+        array[i], array[0] = array[0], array[i]
+        heapify(array, i, 0)
 
-def heapify(iterable, n, root):
+def heapify(array, n, root):
     left = 2 * root + 1  
     right = 2 * root + 2
     largest = root
 
-    if left < n and iterable[left] > iterable[root]:
+    if left < n and array[left] > array[root]:
         largest = left
 
-    if right < n and iterable[right] > iterable[largest]:
+    if right < n and array[right] > array[largest]:
         largest = right
 
     if largest != root:
-        iterable[largest], iterable[root] = iterable[root], iterable[largest]
-        heapify(iterable, n, largest)
+        array[largest], array[root] = array[root], array[largest]
+        heapify(array, n, largest)
 
-def build_max_heap(iterable):
-    n = len(iterable)
+def build_max_heap(array):
+    n = len(array)
     k = int(n // 2 - 1)
 
     for i in range(k, -1, -1):
-        heapify(iterable, n, i)
+        heapify(array, n, i)
