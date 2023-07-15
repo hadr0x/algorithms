@@ -1,4 +1,4 @@
-def depth_first_search(graph, node, visited=[]):
+def depth_first_search(graph, node, visited = list()):
 
     if node not in visited:
         visited.append(node)
