@@ -1,8 +1,8 @@
-def depth_first_search(graph, node, visited = list()):
+def depth_first_search(graph, vertex, visited = list()):
 
-    if node not in visited:
-        visited.append(node)
-        for n in graph[node]:
+    if vertex not in visited:
+        visited.append(vertex)
+        for n in graph[vertex]:
             depth_first_search(graph, n)
 
     return visited
