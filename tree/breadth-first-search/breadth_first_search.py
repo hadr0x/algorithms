@@ -1,12 +1,14 @@
+from collections import deque
+
 def breadth_first_search(root):
-    visited = []
-    queue = []
+    list = []
+    queue = deque()
 
     queue.append(root)
 
     while queue:
-        node = queue.pop(0)
-        visited.append(node.data)
+        node = queue.popleft()
+        list.append(node.data)
 
         if node.left != None:
             queue.append(node.left)
@@ -14,4 +16,4 @@ def breadth_first_search(root):
         if node.right != None:
             queue.append(node.right)
 
-    return visited
+    return list
