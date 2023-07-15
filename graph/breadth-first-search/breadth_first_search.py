@@ -1,16 +1,18 @@
-def breadth_first_search(graph, node):
-    visited = []
-    queue = []
+from collections import deque
 
-    visited.append(node)
-    queue.append(node)
+def breadth_first_search(graph, start):
+    list = []
+    queue = deque()
+
+    list.append(start)
+    queue.append(start)
 
     while queue:
-        vertex = queue.pop(0)
+        vertex = queue.popleft()
 
         for n in graph[vertex]:
-            if n not in visited:
-                visited.append(n)
+            if n not in list:
+                list.append(n)
                 queue.append(n)
     
-    return visited
+    return list
