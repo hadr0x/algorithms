@@ -1,25 +1,22 @@
 # Inorder Traversal : left --> root --> right
-def inorder(node, list=[]):
+def inorder(node):
     if node:
         inorder(node.left)
-        list.append(node.data)
+        print(node.data, end=" ")
         inorder(node.right)
-    return list
 
 
 # Preorder Traversal : root --> left --> right
-def preorder(node, list=[]):
+def preorder(node):
     if node:
-        list.append(node.data)
+        print(node.data, end=" ")
         preorder(node.left)
         preorder(node.right)
-    return list
 
 
 # Postorder Traversal : left --> right --> root
-def postorder(node, list=[]):
+def postorder(node):
     if node:
         postorder(node.left)
         postorder(node.right)
-        list.append(node.data)
-    return list
+        print(node.data, end=" ")
