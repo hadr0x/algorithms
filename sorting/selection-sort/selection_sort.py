@@ -1,9 +1,7 @@
-def selection_sort(iterable):
-    for i in range(len(iterable) - 1):
+def selection_sort(array):
+    for i in range(len(array) - 1):
 
-        for k in range(i, len(iterable)):
+        for k in range(i, len(array)):
 
-            if iterable[k] < iterable[i]:
-                iterable[k], iterable[i] = iterable[i], iterable[k]
-
-    return iterable
+            if array[k] < array[i]:
+                array[k], array[i] = array[i], array[k]
