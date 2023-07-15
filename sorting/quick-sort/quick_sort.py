@@ -1,30 +1,30 @@
-def partition(iterable, low, high):
+def partition(array, low, high):
 
     # Rightmost element as pivot
-    pivot = iterable[high]
+    pivot = array[high]
 
     i = low - 1
 
     for k in range(low, high):
-        if iterable[k] <= pivot:
+        if array[k] <= pivot:
             i = i + 1
-            iterable[k], iterable[i] = iterable[i], iterable[k]
+            array[k], array[i] = array[i], array[k]
 
-    iterable[i + 1], iterable[high] = iterable[high], iterable[i + 1]
+    array[i + 1], array[high] = array[high], array[i + 1]
 
     # Position where partition is done
     return i + 1
 
 
-def quick_sort(iterable, low, high):
+def quick_sort(array, low, high):
     if low < high:
         
-        pi = partition(iterable, low, high)
+        pi = partition(array, low, high)
 
         # Recursive call on the left of pivot    
-        quick_sort(iterable, low, pi - 1)
+        quick_sort(array, low, pi - 1)
 
         # Recursive call on the right of pivot
-        quick_sort(iterable, pi + 1, high)
+        quick_sort(array, pi + 1, high)
         
-    return iterable
+    return array
