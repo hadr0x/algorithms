@@ -1,14 +1,16 @@
-def merge_sort(iterable):
-    listLength = len(iterable)
-    if listLength == 1:
-        return iterable
+def merge_sort(array):
+    length = len(array)
 
-    midPoint = listLength // 2
+    if length == 1:
+        return array
 
-    leftList = merge_sort(iterable[:midPoint])
-    rightList = merge_sort(iterable[midPoint:])
+    mid = length // 2
 
-    return merge(leftList, rightList)
+    left = merge_sort(array[:mid])
+    right = merge_sort(array[mid:])
+
+    return merge(left, right)
+
 
 def merge(left, right):
     output = []
@@ -17,10 +19,10 @@ def merge(left, right):
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
             output.append(left[i])
-            i = i + 1
+            i += 1
         else:
             output.append(right[j])
-            j = j + 1
+            j += 1
 
     output.extend(left[i:])
     output.extend(right[j:])
